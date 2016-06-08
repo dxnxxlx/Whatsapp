@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Chat de Laboratoria</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  	<link rel="shortcut icon" href="image/favicon.png" type="image/png">
+	  	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CRoboto:300,400,500" media="all">
+	  	<link rel="stylesheet" href="css/font-awesome.min.css">
+	  	<link rel="stylesheet" href="css/icomoon.css">
+	  	<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/queries.css">
+	</head>
+	<body class="bg-gray-fondo">
+		<header class="bg-green">
+			
+		</header>
+		<section >
+			<div class="cuadro container-web">
+				<div class="row">
+					<aside class="w-contacts col-xs-4 pd-0">
+						<div class="cab bg-gray-cab">	
+							<img src="image/gian.jpg" alt="Gian" class="mgtr-auto">
+							<span class="icon-dots-three-vertical mgtr-auto"></span>
+							<span class="icon-message mgtr-auto"></span>
+							
+						</div>
+		
+						<div class="busc bg-white">
+							<div class="buscador">
+						        <input type="text" id="search" placeholder="Buscar o empezar un chat nuevo" onkeypress="if (event.keyCode==13){ filtrarPorNombre();}" >
+						        <span class="icon-search"></span>
+							</div>
+						</div>
+
+						<div class="chat" id="lista">
+							<div class="chat-per row" value="0">
+								<img src="image/logocodeacademy.png" alt="Laboratoria avatar" class="mgtr-auto">
+								<div class="inlineb">
+									<div class="chat1">	
+										<p class="nombre">Laboratoria Perú</p>
+										<p class="hora">14:25</p>
+									</div>
+									<span class="linea">Aldo: Dale dale!</span>
+								</div>
+							</div>
+
+
+							<div class="chat-per row" value="1">
+								<img src="image/raymi.jpg" alt="Raymi" class="mgtr-auto">
+								<div class="inlineb">
+									<div class="chat1">	
+										<p class="nombre">Raymi Saldomando</p>
+										<p class="hora">11:25</p>
+						
+									</div>
+									<span class="linea">La clase va bien!</span>
+								</div>
+							</div>
+
+							<div class="chat-per row" value="2">
+								<img src="image/mariana.jpg" alt="Mariana" class="mgtr-auto">
+								<div class="inlineb">
+									<div class="chat1">	
+										<p class="nombre">Mariana Acosta</p>
+										<p class="hora">09:25</p>
+						
+									</div>
+									<span class="linea">El panel de speakers está buenazo</span>
+								</div>
+							</div>
+
+							<div class="chat-per row" value="3">
+								<img src="image/anamaria.jpg" alt="Anamaria" class="mgtr-auto">
+								<div class="inlineb">
+									<div class="chat1">	
+										<p class="nombre">Ana María Martinez Franklin</p>
+										<p class="hora">Ayer</p>
+						
+									</div>
+									<span class="linea">Pues dale chamo!</span>
+								</div>
+							</div>
+
+							<div class="chat-per row" value="4">
+								<img src="image/rodulfo.jpg" alt="Rodulfo" class="mgtr-auto">
+								<div class="inlineb">
+									<div class="chat1">	
+										<p class="nombre">Rodulfo Prieto</p>
+										<p class="hora">Martes</p>
+						
+									</div>
+									<span class="linea">¿Cómo van las chicas?</span>
+								</div>
+							</div>
+
+							<div class="chat-per row" value="5">
+								<img src="image/andrea.jpg" alt="Andrea" class="mgtr-auto">
+								<div class="inlineb">
+									<div class="chat1">	
+										<p class="nombre">Andrea Lamas</p>
+										<p class="hora">Lunes</p>
+						
+									</div>
+									<span class="linea">Hoy me toca clase de canto, yee!</span>
+								</div>
+							</div>
+							<div class="chat-per row" value="6">
+								<img src="image/mariapaula.jpg" alt="Papu" class="mgtr-auto">
+								<div class="inlineb">
+									<div class="chat1">	
+										<p class="nombre">Maria Paula Rivarola</p>
+										<p class="hora">13/01/2016</p>
+									</div>
+									<span class="linea">Wuju! esto me encanta!! en verdad!</span>
+								</div>
+							</div>
+							<div class="chat-per row" value="7">
+								<img src="image/katy.jpg" alt="Katy" class="mgtr-auto">
+								<div class="inlineb">
+									<div class="chat1">	
+										<p class="nombre">Katy Sánchez</p>
+										<p class="hora">11/01/2016</p>
+						
+									</div>
+									<span class="linea">No te preocupes, tengo el salón bajo control</span>
+								</div>
+							</div>
+							<div class="chat-per row" onclick="clickNuevoAmigo(this);" value="8">
+								<img src="image/aldo.jpg" alt="Aldo" class="mgtr-auto">
+								<div class="inlineb">
+									<div class="chat1">	
+										<p class="nombre">Aldo Alfaro</p>
+										<p class="hora">03/01/2016</p>
+									</div>
+									<span class="linea">Vao a comer?</span>
+								</div>
+							</div>
+							<div class="chat-per row" value="9">
+								<img src="image/avatar.jpg" alt="raymi 2" class="mgtr-auto">
+								<div class="inlineb">
+									<div class="chat1">	
+										<p class="nombre">Raymi II</p>
+										<p class="hora">01/01/2016</p>
+						
+									</div>
+									<span class="linea">Feliz año!</span>
+								</div>
+							</div>
+						</div>
+					</aside>
+					<div class="col-xs-8 col-xs-8 bg-gray-cab pd-0">
+						<div class="cab bg-gray-cab conversacion">	
+							<div class="cabconver">
+								<img src="image/logocodeacademy.png" alt="Gian" class="mgtr-auto" id="imageChatActual">
+								<span class="icon-dots-three-vertical mgtr-auto"></span>
+								<span class="icon-attachment mgtr-auto"></span>
+								<div class="inlineb">
+									<div class="chat1">	
+										<p class="nombre" id="chatActual">Laboratoria Perú</p>
+										<p class="linea" id="miembros">Ana María, Aldo, Gian, Mariana, Papu, Tú</p>
+									</div>
+								</div>
+							</div>
+							<div id="chatLaboratoria"  class="conver-chat">	
+
+
+				
+							</div>	
+
+							<div class="busc-conver">
+								<span class="icon-insert_emoticon" id="span1"></span>
+								<span class="icon-mic" id="span2"></span>
+								<div class="buscador-conver">
+							    <input type="text" placeholder="Escribe tu mensaje aquí" class="bg-white" id="inputMessage" onkeypress="if (event.keyCode==13){ writeMessage();}"  x-webkit-speech/>
+								</div>
+							</div>
+						</div>
+					</div>						
+				</div>
+			</div>				
+		</section>
+		<script src="https://code.jquery.com/jquery-2.2.2.js"></script>
+		<script src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
